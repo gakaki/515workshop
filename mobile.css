@@ -1,30 +1,56 @@
-html, body {width: 100%; height: 100%;}
+html, body {/*width: 100%; height: 100%;*/}
 body{ 
 
 	margin: 0 auto; 
 /*	overflow: hidden;
 	background-color: #FFF;
 	width: 100%;
-	height:100%;
-	text-align:center ;
+	height:100%;0  text-align:center ;
 	padding:0; 
 	overflow:hidden; 
 	vertical-align: middle;
 */
 }
 
-.main,#swiffycontainer { 
-	/*z-index:9;*/
-	/*text-align:center;*/
+/*#swiffycontainer { 
+	border:0px;
+	border-color:white;
+	
+	width: 725px; height: 650px;
 	margin :0 auto;
+	
 	position:absolute;
     top:50%;
     left:50%;
     margin:-325px 0 0 -362px;
+}*/
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	
+  	#swiffycontainer {
+		margin :0 auto;
+	  	margin-top:-20%;
+	}
 }
 
 
-#swiffycontainer{
 
-	width: 725px; height: 650px;
+@media only screen and (device-width: 768px) {
+  /* For general iPad layouts */
+  #swiffycontainer {
+		
+		margin :0 auto;
+		position:absolute;
+	    top:50%;
+	    left:50%;
+	    margin:-325px 0 0 -362px;
+	}
+}
+
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+  /* For portrait layouts only */
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+ 
 }
