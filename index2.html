@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- <script src="detectmobilebrowser.js" type="text/javascript" charset="utf-8"></script> -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>515</title>
+<style media="screen" type="text/css">
+.bodys {
+	background-color: #FFF;
+	width: 100%;
+	height:100%;
+	text-align:center ;
+	margin:0 auto; 
+	padding:0; 
+	overflow:auto; 
+	overflow-x: hidden; 
+	overflow-y:hidden; 
+	overflow:scroll;
+	vertical-align: middle;
+}
+.main { 
+	z-index:9;
+	text-align:center;
+	margin :auto;
+	position:absolute;
+    top:50%;
+    left:50%;
+    margin:-325px 0 0 -362px;
+/*	margin-left:-193px; */
+/*margin-top:-20px;*/
+}
+</style>
+
+
+<script type="text/javascript">
+function isMobile() {
+  var index = navigator.appVersion.indexOf("Mobile");
+  return (index > -1);
+}
+function isIpad () {
+  var index = navigator.appVersion.indexOf("iPad");
+  return (index > -1);
+}
+window.onload = function(){
+  var flash_obj = document.getElementById('flash_obj_comment');
+  flash_obj.style.display='none';
+  if ( isMobile() && isIpad() ) {
+    flash_obj.style.display='none';
+    window.location.href="/mobile.html";
+  }else{
+    flash_obj.style.display='block';
+  }
+}
+
+</script>
+
+</head>
+
+<body>
+<div class="main">
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="725" height="650" align="middle"  >
+             <param name="movie" value="main.swf" />
+             <param name="quality" value="high" />
+             <param name="wmode" value="transparent">
+             <param name="swfversion" value="6.0.65.0" />
+             <!-- 此 param 标签提示使用 Flash Player 6.0 r65 和更高版本的用户下载最新版本的 Flash Player。如果您不想让用户看到该提示，请将其删除。 -->
+             <param name="expressinstall" value="Scripts/expressInstall.swf" />
+             <!-- 下一个对象标签用于非 IE 浏览器。所以使用 IECC 将其从 IE 隐藏。 -->
+             <!--[if !IE]>-->
+             <object data="main.swf" type="application/x-shockwave-flash" width="725" height="650" align="middle">
+               <!--<![endif]-->
+               <param name="quality" value="high" />
+               <param name="wmode" value="transparent">
+               <param name="swfversion" value="6.0.65.0" />
+               <param name="expressinstall" value="Scripts/expressInstall.swf" />
+               <!-- 浏览器将以下替代内容显示给使用 Flash Player 6.0 和更低版本的用户。 -->
+               <div id='flash_obj_comment'>
+                 <h4>此页面上的内容需要较新版本的 Adobe Flash Player。</h4>
+                 <p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="获取 Adobe Flash Player" width="112" height="33" /></a></p>
+               </div>
+               <!--[if !IE]>-->
+             </object>
+             <!--<![endif]-->
+</object>
+</div>
+</body>
+</html>

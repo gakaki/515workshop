@@ -1,0 +1,30 @@
+html, body {width: 100%; height: 100%;}
+body{ 
+
+	margin: 0 auto; 
+/*	overflow: hidden;
+	background-color: #FFF;
+	width: 100%;
+	height:100%;
+	text-align:center ;
+	padding:0; 
+	overflow:hidden; 
+	vertical-align: middle;
+*/
+}
+
+.main,#swiffycontainer { 
+	/*z-index:9;*/
+	/*text-align:center;*/
+	margin :0 auto;
+	position:absolute;
+    top:50%;
+    left:50%;
+    margin:-325px 0 0 -362px;
+}
+
+
+#swiffycontainer{
+
+	width: 725px; height: 650px;
+}
