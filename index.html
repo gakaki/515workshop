@@ -1,29 +1,110 @@
-<!doctype html>
-<html>
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>515workshop</title>
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<meta name="author" content="515workshop" />
+<meta name="Copyright" content="版权所有:515workshop." />
+<meta name="description" content=" www.515workshop.com 上海攸熙文化传播有限公司 13818198787 56096683 是以广告摄影、服装摄影、电商摄影、产品摄影、活动跟拍、影棚出租等服务的专业摄影公司." />
+<meta name="keywords" content="产品摄影,服装摄影,电商摄影,广告摄影,商业摄影,活动跟拍,企业形象拍摄,影棚出租"  />
 
 
-<script src="https://www.gstatic.com/swiffy/v4.5/runtime.js"></script>
-<script src="swiffyobject.js"></script>
+<title>515</title>
+<style media="screen" type="text/css">
+.bodys {
+	background-color: #FFF;
+	width: 100%;
+	height:100%;
+	text-align:center ;
+	margin:0 auto; 
+	padding:0; 
+	overflow:auto; 
+	overflow-x: hidden; 
+	overflow-y:hidden; 
+	overflow:scroll;
+	vertical-align: middle;
+}
+.main { 
+	z-index:9;
+	text-align:center;
+	margin :auto;
+	position:absolute;
+    top:50%;
+    left:50%;
+    margin:-325px 0 0 -362px;
+/*	margin-left:-193px; */
+/*margin-top:-20px;*/
+}
+</style>
 
-<link rel="stylesheet" type="text/css" href="mobile.css">
 
-</head>
-<body>
+<script type="text/javascript">
+function detect_mobile() {
+  
+  var userAgent = navigator.userAgent.toLowerCase();
+  var res       = true;
+  if (userAgent.indexOf("ipad") != -1) {
+  
+  } else if (userAgent.indexOf("ipod") != -1) {
+    
+  } else if (userAgent.indexOf("iphone") != -1) {
+    
+  } else {
+    res = false;
+  }
+  return res;
+}
 
-<div id="swiffycontainer" style="width: 725px; height: 650px;"></div>
+var  is_mobile = detect_mobile();
+
+if ( is_mobile == true ) {
+  // console.log('mobile.html');
+  window.location.href="mobile.html";
+}
 
 
-
-
-<script>
-var stage = new swiffy.Stage(document.getElementById('swiffycontainer'), swiffyobject);
-stage.start();
 </script>
 
+
+
+</head>
+
+<body>
+<div class="main">
+
+
+
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="725" height="650" align="middle">
+             <param name="movie" value="main.swf" />
+             <param name="quality" value="high" />
+             <param name="wmode" value="transparent">
+             <param name="swfversion" value="6.0.65.0" />
+             <!-- 此 param 标签提示使用 Flash Player 6.0 r65 和更高版本的用户下载最新版本的 Flash Player。如果您不想让用户看到该提示，请将其删除。 -->
+             <param name="expressinstall" value="Scripts/expressInstall.swf" />
+             <!-- 下一个对象标签用于非 IE 浏览器。所以使用 IECC 将其从 IE 隐藏。 -->
+             <!--[if !IE]>-->
+             <object data="main.swf" type="application/x-shockwave-flash" width="725" height="650" align="middle">
+               <!--<![endif]-->
+               <param name="quality" value="high" />
+               <param name="wmode" value="transparent">
+               <param name="swfversion" value="6.0.65.0" />
+               <param name="expressinstall" value="Scripts/expressInstall.swf" />
+               <!-- 浏览器将以下替代内容显示给使用 Flash Player 6.0 和更低版本的用户。 -->
+               <div>
+                 <h4>此页面上的内容需要较新版本的 Adobe Flash Player。</h4>
+                 <p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="获取 Adobe Flash Player" width="112" height="33" /></a></p>
+               </div>
+               <!--[if !IE]>-->
+             </object>
+             <!--<![endif]-->
+</object>
+
+
+
+
+
+
+
+</div>
 </body>
 </html>
